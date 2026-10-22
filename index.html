@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مختبر الرشيد - حجز المواعيد</title>
+  <meta name="description" content="احجز موعدك في مختبر الرشيد الطبي ببغداد بكل سهولة. تحاليل طبية دقيقة، نتائج سريعة، وخدمة متميزة." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="19" stroke="#6b8e23" stroke-width="2"/>
+            <path d="M20 8 C20 8 14 14 14 20 C14 26 20 32 20 32 C20 32 26 26 26 20 C26 14 20 8 20 8Z" fill="#6b8e23" opacity="0.3"/>
+            <path d="M8 20 C8 20 14 14 20 14 C26 14 32 20 32 20 C32 20 26 26 20 26 C14 26 8 20 8 20Z" fill="#6b8e23" opacity="0.3"/>
+            <circle cx="20" cy="20" r="5" fill="#6b8e23"/>
+            <line x1="20" y1="8" x2="20" y2="32" stroke="#6b8e23" stroke-width="1.5"/>
+            <line x1="8" y1="20" x2="32" y2="20" stroke="#6b8e23" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">مختبر الرشيد</span>
+          <span class="logo-sub">بغداد - العراق</span>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+        <li><a href="#services" class="nav-link">خدماتنا</a></li>
+        <li><a href="#booking" class="nav-link">احجز موعد</a></li>
+        <li><a href="#stats" class="nav-link">إنجازاتنا</a></li>
+        <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#booking" class="btn-nav-book">احجز الآن</a>
+        <button class="hamburger" id="hamburger" aria-label="القائمة">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>متاح الآن &bull; 7 أيام في الأسبوع</span>
+        </div>
+        <h1 class="hero-title">
+          صحّتك أولويتنا
+          <span class="hero-title-highlight">تحاليل دقيقة</span>
+          بأيدٍ عراقية موثوقة
+        </h1>
+        <p class="hero-desc">
+          نقدم لك خدمات التحاليل الطبية بأعلى معايير الجودة والدقة.
+          احجز موعدك الآن واحصل على نتائجك إلكترونياً في أسرع وقت.
+        </p>
+        <div class="hero-buttons">
+          <a href="#booking" class="btn-primary" id="hero-book-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            احجز موعدك الآن
+          </a>
+          <a href="#services" class="btn-secondary" id="hero-services-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            استكشف خدماتنا
+          </a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>معتمد من وزارة الصحة العراقية</span>
+          </div>
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>نتائج خلال 24 ساعة</span>
+          </div>
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>دقة 99.8%</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card-float hero-card-1">
+          <div class="hcard-icon">&#x1F9EC;</div>
+          <div class="hcard-text">
+            <strong>تحليل DNA</strong>
+            <span>متاح الآن</span>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <img src="lab_hero.jpg" alt="مختبر طبي احترافي" class="hero-img" />
+          <div class="hero-img-overlay"></div>
+        </div>
+        <div class="hero-card-float hero-card-2">
+          <div class="hcard-icon">&#x2705;</div>
+          <div class="hcard-text">
+            <strong>نتيجتك جاهزة!</strong>
+            <span>تحليل الدم الشامل</span>
+          </div>
+        </div>
+        <div class="hero-card-float hero-card-3">
+          <div class="hcard-icon">&#x23F1;&#xFE0F;</div>
+          <div class="hcard-text">
+            <strong>24 ساعة</strong>
+            <span>متوسط وقت النتيجة</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f8faf4"/></svg>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats-section" id="stats">
+    <div class="stats-container">
+      <div class="stat-card" data-target="15000">
+        <div class="stat-icon">&#x1F465;</div>
+        <div class="stat-number"><span class="counter">0</span>+</div>
+        <div class="stat-label">مريض راضٍ</div>
+      </div>
+      <div class="stat-card" data-target="200">
+        <div class="stat-icon">&#x1F52C;</div>
+        <div class="stat-number"><span class="counter">0</span>+</div>
+        <div class="stat-label">نوع تحليل</div>
+      </div>
+      <div class="stat-card" data-target="15">
+        <div class="stat-icon">&#x1F3C6;</div>
+        <div class="stat-number"><span class="counter">0</span></div>
+        <div class="stat-label">سنة خبرة</div>
+      </div>
+      <div class="stat-card" data-target="99">
+        <div class="stat-icon">&#x2B50;</div>
+        <div class="stat-number"><span class="counter">0</span>%</div>
+        <div class="stat-label">دقة النتائج</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services-section" id="services">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-badge">خدماتنا المتميزة</div>
+        <h2 class="section-title">تحاليل شاملة لكل احتياجاتك</h2>
+        <p class="section-desc">نوفر أكثر من 200 نوع من التحاليل الطبية بأحدث الأجهزة وأدق المعايير</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" id="service-blood">
+          <div class="service-icon-wrap" style="--clr: #6b8e23">
+            <span>&#x1FA78;</span>
+          </div>
+          <h3>تحاليل الدم الشاملة</h3>
+          <p>CBC، سكر الدم، الدهون، وظائف الكبد والكلى، وأكثر من 50 تحليل دم متخصص</p>
+          <div class="service-meta">
+            <span class="service-time">نتيجة خلال 4 ساعات</span>
+            <span class="service-price">من 5,000 د.ع</span>
+          </div>
+          <a href="#booking" class="service-book-btn">احجز الآن</a>
+        </div>
+        <div class="service-card featured" id="service-hormone">
+          <div class="service-featured-badge">الأكثر طلباً</div>
+          <div class="service-icon-wrap" style="--clr: #8fae1b">
+            <span>&#x1F9EA;</span>
+          </div>
+          <h3>تحليل الهرمونات</h3>
+          <p>فحص شامل لجميع الهرمونات الذكورية والأنثوية، الغدة الدرقية، هرمونات الخصوبة</p>
+          <div class="service-meta">
+            <span class="service-time">نتيجة خلال 24 ساعة</span>
+            <span class="service-price">من 12,000 د.ع</span>
+          </div>
+          <a href="#booking" class="service-book-btn">احجز الآن</a>
+        </div>
+        <div class="service-card" id="service-urine">
+          <div class="service-icon-wrap" style="--clr: #5a7a1a">
+            <span>&#x1F52C;</span>
+          </div>
+          <h3>تحليل البول والبراز</h3>
+          <p>فحص دقيق للمجرى البولي، الكلى، الجهاز الهضمي والكشف عن الطفيليات</p>
+          <div class="service-meta">
+            <span class="service-time">نتيجة خلال 2 ساعة</span>
+            <span class="service-price">من 3,000 د.ع</span>
+          </div>
+          <a href="#booking" class="service-book-btn">احجز الآن</a>
+        </div>
+        <div class="service-card" id="service-culture">
+          <div class="service-icon-wrap" style="--clr: #7a9e2a">
+            <span>&#x1F9A0;</span>
+          </div>
+          <h3>زراعة البكتيريا</h3>
+          <p>كشف البكتيريا والفطريات مع اختبار حساسية المضادات الحيوية لعلاج دقيق</p>
+          <div class="service-meta">
+            <span class="service-time">نتيجة خلال 48 ساعة</span>
+            <span class="service-price">من 8,000 د.ع</span>
+          </div>
+          <a href="#booking" class="service-book-btn">احجز الآن</a>
+        </div>
+        <div class="service-card" id="service-vitamin">
+          <div class="service-icon-wrap" style="--clr: #4a6e10">
+            <span>&#x1F48A;</span>
+          </div>
+          <h3>الفيتامينات والمعادن</h3>
+          <p>قياس مستوى فيتامين D، B12، الحديد، المغنيسيوم، الكالسيوم وكل العناصر الغذائية</p>
+          <div class="service-meta">
+            <span class="service-time">نتيجة خلال 8 ساعات</span>
+            <span class="service-price">من 7,000 د.ع</span>
+          </div>
+          <a href="#booking" class="service-book-btn">احجز الآن</a>
+        </div>
+        <div class="service-card" id="service-pcr">
+          <div class="service-icon-wrap" style="--clr: #6b8e23">
+            <span>&#x1F9EC;</span>
+          </div>
+          <h3>تحاليل الحمض النووي PCR</h3>
+          <p>كشف الفيروسات والأمراض الوراثية بأعلى دقة باستخدام تقنية PCR المتطورة</p>
+          <div class="service-meta">
+            <span class="service-time">نتيجة خلال 6 ساعات</span>
+            <span class="service-price">من 15,000 د.ع</span>
+          </div>
+          <a href="#booking" class="service-book-btn">احجز الآن</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOOKING SECTION ===== -->
+  <section class="booking-section" id="booking">
+    <div class="booking-bg-deco">
+      <div class="deco-circle deco-1"></div>
+      <div class="deco-circle deco-2"></div>
+    </div>
+    <div class="section-container">
+      <div class="section-header light">
+        <div class="section-badge light">حجز الموعد</div>
+        <h2 class="section-title">احجز موعدك في دقيقتين</h2>
+        <p class="section-desc">إجراء سهل وسريع — أدخل بياناتك واختر التحليل والموعد المناسب</p>
+      </div>
+      <div class="steps-indicator">
+        <div class="step-item active" id="step-indicator-1">
+          <div class="step-circle">1</div>
+          <span>بياناتك</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step-item" id="step-indicator-2">
+          <div class="step-circle">2</div>
+          <span>التحليل</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step-item" id="step-indicator-3">
+          <div class="step-circle">3</div>
+          <span>الموعد</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step-item" id="step-indicator-4">
+          <div class="step-circle">&#x2713;</div>
+          <span>تأكيد</span>
+        </div>
+      </div>
+
+      <div class="booking-form-wrapper">
+        <form class="booking-form" id="bookingForm" novalidate>
+
+          <!-- Step 1 -->
+          <div class="form-step active" id="form-step-1">
+            <h3 class="step-title"><span class="step-num">1</span> بياناتك الشخصية</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="fullName">الاسم الكامل <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  <input type="text" id="fullName" name="fullName" placeholder="أدخل اسمك الكامل" required />
+                </div>
+                <span class="field-error" id="fullName-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="phone">رقم الجوال <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.07 9.8 19.79 19.79 0 011 1.18 2 2 0 013 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+                  <input type="tel" id="phone" name="phone" placeholder="07XXXXXXXXX" required />
+                </div>
+                <span class="field-error" id="phone-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <div class="input-wrapper">
+                  <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <input type="email" id="email" name="email" placeholder="example@email.com" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="idNumber">رقم البطاقة الوطنية <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                  <input type="text" id="idNumber" name="idNumber" placeholder="أدخل رقم هويتك" required />
+                </div>
+                <span class="field-error" id="idNumber-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="age">العمر</label>
+                <div class="input-wrapper">
+                  <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  <input type="number" id="age" name="age" placeholder="عمرك بالسنوات" min="1" max="120" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="gender">الجنس <span class="required">*</span></label>
+                <div class="input-wrapper select-wrapper">
+                  <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 10-16 0"/></svg>
+                  <select id="gender" name="gender" required>
+                    <option value="" disabled selected>اختر الجنس</option>
+                    <option value="male">ذكر</option>
+                    <option value="female">أنثى</option>
+                  </select>
+                </div>
+                <span class="field-error" id="gender-error"></span>
+              </div>
+            </div>
+            <div class="step-actions">
+              <button type="button" class="btn-next" id="next-step-1">التالي &larr;</button>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="form-step" id="form-step-2">
+            <h3 class="step-title"><span class="step-num">2</span> اختر التحليل المطلوب</h3>
+            <div class="search-test-wrapper">
+              <div class="input-wrapper">
+                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="text" id="testSearch" placeholder="ابحث عن التحليل..." />
+              </div>
+            </div>
+            <div class="tests-categories">
+              <button type="button" class="cat-btn active" data-cat="all">الكل</button>
+              <button type="button" class="cat-btn" data-cat="blood">الدم</button>
+              <button type="button" class="cat-btn" data-cat="hormone">الهرمونات</button>
+              <button type="button" class="cat-btn" data-cat="urine">البول</button>
+              <button type="button" class="cat-btn" data-cat="pcr">PCR</button>
+              <button type="button" class="cat-btn" data-cat="vitamin">الفيتامينات</button>
+            </div>
+            <div class="tests-list" id="testsList"></div>
+            <div class="selected-tests-summary" id="selectedSummary" style="display:none">
+              <h4>التحاليل المختارة:</h4>
+              <div class="selected-tags" id="selectedTags"></div>
+              <div class="total-price">المجموع: <strong id="totalPrice">0</strong> د.ع</div>
+            </div>
+            <span class="field-error" id="tests-error"></span>
+            <div class="step-actions">
+              <button type="button" class="btn-prev" id="prev-step-2">&rarr; السابق</button>
+              <button type="button" class="btn-next" id="next-step-2">التالي &larr;</button>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="form-step" id="form-step-3">
+            <h3 class="step-title"><span class="step-num">3</span> اختر التاريخ والوقت</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="appointmentDate">تاريخ الموعد <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  <input type="date" id="appointmentDate" name="appointmentDate" required />
+                </div>
+                <span class="field-error" id="date-error"></span>
+              </div>
+              <div class="form-group">
+                <label>وقت الموعد <span class="required">*</span></label>
+                <div class="time-slots" id="timeSlots">
+                  <button type="button" class="time-slot" data-time="08:00">8:00 ص</button>
+                  <button type="button" class="time-slot" data-time="08:30">8:30 ص</button>
+                  <button type="button" class="time-slot" data-time="09:00">9:00 ص</button>
+                  <button type="button" class="time-slot" data-time="09:30">9:30 ص</button>
+                  <button type="button" class="time-slot" data-time="10:00">10:00 ص</button>
+                  <button type="button" class="time-slot booked" data-time="10:30" disabled>10:30 ص</button>
+                  <button type="button" class="time-slot" data-time="11:00">11:00 ص</button>
+                  <button type="button" class="time-slot booked" data-time="11:30" disabled>11:30 ص</button>
+                  <button type="button" class="time-slot" data-time="12:00">12:00 م</button>
+                  <button type="button" class="time-slot" data-time="14:00">2:00 م</button>
+                  <button type="button" class="time-slot" data-time="14:30">2:30 م</button>
+                  <button type="button" class="time-slot" data-time="15:00">3:00 م</button>
+                  <button type="button" class="time-slot booked" data-time="15:30" disabled>3:30 م</button>
+                  <button type="button" class="time-slot" data-time="16:00">4:00 م</button>
+                  <button type="button" class="time-slot" data-time="16:30">4:30 م</button>
+                  <button type="button" class="time-slot" data-time="17:00">5:00 م</button>
+                </div>
+                <span class="field-error" id="time-error"></span>
+              </div>
+            </div>
+            <div class="form-group full-width">
+              <label for="notes">ملاحظات إضافية</label>
+              <div class="input-wrapper textarea-wrapper">
+                <textarea id="notes" name="notes" placeholder="أي معلومات إضافية تريد إخبارنا بها..." rows="3"></textarea>
+              </div>
+            </div>
+            <div class="time-legend">
+              <span class="legend-item"><span class="legend-dot available"></span> متاح</span>
+              <span class="legend-item"><span class="legend-dot booked-dot"></span> محجوز</span>
+              <span class="legend-item"><span class="legend-dot selected-dot"></span> مختار</span>
+            </div>
+            <div class="step-actions">
+              <button type="button" class="btn-prev" id="prev-step-3">&rarr; السابق</button>
+              <button type="button" class="btn-next" id="next-step-3">مراجعة الحجز &larr;</button>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="form-step" id="form-step-4">
+            <h3 class="step-title"><span class="step-num">&#x2713;</span> مراجعة وتأكيد الحجز</h3>
+            <div class="confirmation-card" id="confirmationCard"></div>
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label" for="agreeTerms">
+                <input type="checkbox" id="agreeTerms" name="agreeTerms" required />
+                <span class="checkbox-custom"></span>
+                أوافق على <a href="#" class="link-terms">الشروط والأحكام</a> وسياسة الخصوصية
+              </label>
+            </div>
+            <div class="step-actions">
+              <button type="button" class="btn-prev" id="prev-step-4">&rarr; السابق</button>
+              <button type="submit" class="btn-submit" id="submitBtn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                تأكيد الحجز
+              </button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SUCCESS MODAL ===== -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-content">
+      <div class="modal-success-icon">
+        <svg viewBox="0 0 100 100" fill="none">
+          <circle cx="50" cy="50" r="45" stroke="#6b8e23" stroke-width="4" fill="#f0f7e6"/>
+          <polyline points="30,52 45,67 70,36" stroke="#6b8e23" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h2 class="modal-title">تم الحجز بنجاح!</h2>
+      <p class="modal-desc">شكراً لك! تم تأكيد موعدك بنجاح. ستصلك رسالة تأكيد على جوالك قريباً.</p>
+      <div class="modal-booking-ref">
+        <span>رقم الحجز:</span>
+        <strong id="bookingRef"></strong>
+      </div>
+      <div class="modal-details" id="modalDetails"></div>
+      <button class="btn-primary modal-close-btn" id="modalCloseBtn">ممتاز! إغلاق</button>
+    </div>
+  </div>
+
+  <!-- ===== WHY US ===== -->
+  <section class="why-section">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-badge">لماذا نحن؟</div>
+        <h2 class="section-title">ما يميّزنا عن غيرنا</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">&#x1F3C5;</div>
+          <h3>اعتماد دولي</h3>
+          <p>معتمدون من CAP وISO 15189 لضمان أعلى معايير الجودة في التحاليل الطبية</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">&#x1F4F1;</div>
+          <h3>نتائج إلكترونية</h3>
+          <p>استلم نتائجك مباشرةً على هاتفك عبر الرسائل أو البريد الإلكتروني بشكل آمن</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">&#x1F697;</div>
+          <h3>خدمة منزلية</h3>
+          <p>نأتي إليك! خدمة أخذ العينات في منزلك بنفس معايير الجودة العالية</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">&#x1F468;&#x200D;&#x2695;&#xFE0F;</div>
+          <h3>استشارة طبية مجانية</h3>
+          <p>يشرح لك أطباؤنا نتائج تحاليلك ويقدمون لك توصيات مجانية بدون رسوم إضافية</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials-section">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-badge">آراء عملائنا</div>
+        <h2 class="section-title">ماذا يقول مرضانا</h2>
+      </div>
+      <div class="testimonials-slider" id="testimonialsSlider">
+        <div class="testimonial-card active" id="testi-1">
+          <div class="testi-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+          <p class="testi-text">"خدمة ممتازة وايد! الفني جاء للبيت وأخذ العينة ووصلتني النتائج بعد 4 ساعات. سريع ودقيق ومحترف. بنصح بيه!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">أ</div>
+            <div>
+              <strong>أحمد الجبوري</strong>
+              <span>بغداد - الكرادة</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" id="testi-2">
+          <div class="testi-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+          <p class="testi-text">"أحسن مختبر تعاملت وياه بالعراق. الموقع سهل والحجز بدقيقتين. والنتائج دقيقة وموثوقة بالكامل."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">س</div>
+            <div>
+              <strong>سارة العبيدي</strong>
+              <span>البصرة</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" id="testi-3">
+          <div class="testi-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+          <p class="testi-text">"المختبر نظيف وراقي، الموظفين محترفين ومتعاونين. سعر مناسب مع جودة عالية. ما أروح غيره!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">م</div>
+            <div>
+              <strong>محمد الزبيدي</strong>
+              <span>أربيل</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-dots">
+        <button class="dot active" data-index="0" aria-label="الشريحة 1"></button>
+        <button class="dot" data-index="1" aria-label="الشريحة 2"></button>
+        <button class="dot" data-index="2" aria-label="الشريحة 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact-section" id="contact">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-badge">تواصل معنا</div>
+        <h2 class="section-title">نحن هنا لمساعدتك</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card" id="contact-phone">
+          <div class="contact-icon">&#x1F4DE;</div>
+          <h3>اتصل بنا</h3>
+          <p>0780-000-0000</p>
+          <span>متاح 24/7</span>
+        </div>
+        <div class="contact-card" id="contact-whatsapp">
+          <div class="contact-icon">&#x1F4AC;</div>
+          <h3>واتساب</h3>
+          <p>0770-000-0000</p>
+          <span>رد خلال دقائق</span>
+        </div>
+        <div class="contact-card" id="contact-location">
+          <div class="contact-icon">&#x1F4CD;</div>
+          <h3>موقعنا</h3>
+          <p>شارع الكرادة الداخلية</p>
+          <span>بغداد، جمهورية العراق</span>
+        </div>
+        <div class="contact-card" id="contact-hours">
+          <div class="contact-icon">&#x1F550;</div>
+          <h3>أوقات العمل</h3>
+          <p>8 صباحاً – 10 مساءً</p>
+          <span>طوال أيام الأسبوع</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-icon small">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#a8c060" stroke-width="2"/><circle cx="20" cy="20" r="5" fill="#a8c060"/><line x1="20" y1="8" x2="20" y2="32" stroke="#a8c060" stroke-width="1.5"/><line x1="8" y1="20" x2="32" y2="20" stroke="#a8c060" stroke-width="1.5"/></svg>
+          </div>
+          <div>
+            <span class="logo-main" style="color:#a8c060">مختبر الصحة الزيتونية</span>
+          </div>
+        </div>
+        <p class="footer-tagline">صحّتك أولويتنا &mdash; تحاليل دقيقة بأيدٍ عراقية موثوقة منذ 2009</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="تويتر">&#x1D54F;</a>
+          <a href="#" class="social-btn" aria-label="انستقرام">&#x1F4F8;</a>
+          <a href="#" class="social-btn" aria-label="سناب">&#x1F47B;</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#services">خدماتنا</a></li>
+            <li><a href="#booking">احجز موعد</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>خدماتنا</h4>
+          <ul>
+            <li><a href="#booking">تحاليل الدم</a></li>
+            <li><a href="#booking">الهرمونات</a></li>
+            <li><a href="#booking">PCR</a></li>
+            <li><a href="#booking">الفيتامينات</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>الدعم</h4>
+          <ul>
+            <li><a href="#">الأسئلة الشائعة</a></li>
+            <li><a href="#">سياسة الخصوصية</a></li>
+            <li><a href="#">الشروط والأحكام</a></li>
+            <li><a href="#">اتصل بنا</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 مختبر الرشيد الطبي - بغداد. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTopBtn" aria-label="العودة للأعلى">&#x2191;</button>
+  <script src="app.js"></script>
+</body>
+</html>
